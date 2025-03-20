@@ -21,15 +21,63 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-indigo-700 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Transform Your Space</h1>
-          <p className="text-xl md:text-2xl mb-8">Discover beautiful home decor that reflects your style</p>
-          <Link href="/products" className="bg-white text-indigo-700 px-6 py-3 rounded-md font-medium hover:bg-gray-100">
-            Shop Now
+<section 
+  className="relative bg-cover bg-center text-white py-20 px-4"
+  style={{ backgroundImage: "url('/home-decor.webp')" }}
+>
+  {/* Dark Overlay for Better Readability */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Hero Content */}
+  <div className="relative container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+    
+    {/* Left Side - Text Content */}
+    <div className="text-center md:text-left">
+      <h1 className="text-5xl md:text-6xl font-bold mb-4">
+      Transform Your Home with Timeless Elegance 
+      </h1>
+      <p className="text-lg md:text-xl mb-6">
+      From statement furniture to cozy accents, explore pieces that inspire.
+      </p>
+      
+      {/* Call to Action */}
+      <Link href="/shop">
+        <button className="bg-[#E6C992] text-black px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#b08b2f] transition">
+          Shop Now
+        </button>
+      </Link>
+    </div>
+
+      {/* Right Side - Sale Offer Box */}
+      <div className="bg-[#222222]/40 p-6 rounded-lg shadow-lg text-center">
+          <h2 className="text-2xl font-bold text-[#EFEFEF] mb-4">Spring Refresh Sale </h2>
+          
+          {/* Sale Image */}
+          <Image 
+            src="/canvas-art.png" 
+            alt="Canvas Art" 
+            width={250} 
+            height={250} 
+            className="mx-auto"
+          />
+
+          {/* Sale Text */}
+          <p className="text-lg text-white mt-4">
+          Up to <span className="text-red-500 font-bold">( 40% off )</span> on Wall Art!
+          </p>
+
+          {/* Sale Button */}
+          <Link href="/shop">
+            <button className="mt-4 bg-[#E6C992] text-black px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#b08b2f] transition">
+              Explore Now
+            </button>
           </Link>
         </div>
-      </section>
+  </div>
+</section>
+
+     
+      
       
       {/* Featured Categories */}
       <section className="py-16">
