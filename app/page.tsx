@@ -1,6 +1,7 @@
 // app/page.tsx
 import Image from 'next/image'
 import Link from 'next/link'
+import SpecialDeals from '@/components/SpecialDeals'
 
 export default function Home() {
   // In a real application, you would fetch this data from your database
@@ -17,6 +18,8 @@ export default function Home() {
     { id: 3, name: 'Wall Clock', price: 39.99, image: '/placeholder-product.jpg' },
     { id: 4, name: 'Table Lamp', price: 49.99, image: '/placeholder-product.jpg' },
   ]
+
+ 
 
   return (
     <div>
@@ -76,7 +79,8 @@ export default function Home() {
   </div>
 </section>
 
-     
+  {/* Special Deals Section - Add it here! */}
+  <SpecialDeals />
       
       
       {/* Featured Categories */}

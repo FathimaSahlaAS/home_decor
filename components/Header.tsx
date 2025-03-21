@@ -71,10 +71,10 @@ export default function Header() {
                 <Link href="/page2" className={`block px-4 py-2 ${ darkMode ? "hover:bg-[#2C2C2C]" : "hover:bg-gray-200"}`} onClick={() => setDropdownOpen(false)}>
                   Dashboard
                 </Link>
-                <Link href="/page3" className={`block px-4 py-2 ${ darkMode ? "hover:bg-[#2C2C2C]" : "hover:bg-gray-200"}`} onClick={() => setDropdownOpen(false)}>
+                <Link href="/signin" className={`block px-4 py-2 ${ darkMode ? "hover:bg-[#2C2C2C]" : "hover:bg-gray-200"}`} onClick={() => setDropdownOpen(false)}>
                   Login Page
                 </Link>
-                <Link href="/page4" className={`block px-4 py-2 ${ darkMode ? "hover:bg-[#2C2C2C]" : "hover:bg-gray-200"}`} onClick={() => setDropdownOpen(false)}>
+                <Link href="/signup" className={`block px-4 py-2 ${ darkMode ? "hover:bg-[#2C2C2C]" : "hover:bg-gray-200"}`} onClick={() => setDropdownOpen(false)}>
                   Signup Page
                 </Link>
                 <Link href="/page5" className={`block px-4 py-2 ${ darkMode ? "hover:bg-[#2C2C2C]" : "hover:bg-gray-200"}`} onClick={() => setDropdownOpen(false)}>
